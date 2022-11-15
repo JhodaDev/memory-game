@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* generar el la clase active con @aply */
+.active {
+  @apply bg-gray-dark;
+}
+
+
+.hide::before {
+  content: "";
+  @apply absolute top-0 left-0 h-full w-full bg-gray-medium rounded-full;
+}
